@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="styles.css">
+  <title>Node.js Documentation</title>
+</head>
+<body>
+  
+<main id="main-doc">
+
+  <nav id="navbar">
+    <header id="node">Node.js Documentation</header>
+    <a class="nav-link" href="#About_documentation">About documentation</a>
+    <a class="nav-link" href="#API_reference_documentation">API reference documentation</a>
+    <a class="nav-link" href="#ES6_features">ES6 features</a>
+    <a class="nav-link" href="#Guides">Guides</a>
+    <a class="nav-link" href="#Dependencies">Dependencies</a>
+  </nav>
+
+  <section class="main-section" id="About_documentation">
+    <header id="About_documentation">
+      About documentation
+    </header>
+    <p>There are several types of documentation available on this website:</p>
+    <ul>
+      <li>API reference documentation</li>
+      <li>ES6 features</li>
+      <li>Guides</li>
+      <li>Dependencies</li>
+    </ul>
+  </section>
+
+  <section class="main-section" id="API_reference_documentation">
+    <header id="API_reference_documentation">
+      API reference documentation
+    </header>
+    <p>The API reference documentation provides detailed information about a function or object in Node.js. This documentation indicates what arguments a method accepts, the return value of that method, and what errors may be related to that method. It also indicates which methods are available for different versions of Node.js.</p>
+    <p>This documentation describes the built-in modules provided by Node.js. It does not document modules provided by the community.</p>
+    <p>Looking for API docs of previous releases?</p>
+    
+    <li><a href="https://nodejs.org/docs/latest-v20.x/api/">Node.js 20.x</a></li>
+    <li><a href="https://nodejs.org/docs/latest-v19.x/api/">Node.js 19.x</a></li>
+    <li><a href="https://nodejs.org/docs/latest-v18.x/api/">Node.js 18.x</a></li>
+    <li><a href="https://nodejs.org/docs/latest-v17.x/api/">Node.js 17.x</a></li>
+    <li><a href="https://nodejs.org/docs/latest-v16.x/api/">Node.js 16.x</a></li>
+  </section>
+
+  <section class="main-section" id="ES6_features">
+    <header id="ES6_features">
+      ES6 features
+    </header>
+    <p>The ES6 section describes the three ES6 feature groups, and details which features are enabled by default in Node.js, alongside explanatory links. It also shows how to find which version of V8 shipped with a particular Node.js release.</p>
+    <p></p>
+    <code>node --v8-options | grep "in progress"</code>
+    <br><code>node -p process.versions.v8</code>
+    <br><code>perf record -e cycles:u -g -- node --perf-basic-prof app.js
+    </code>
+    <br><code>perf record -F99 -p `pgrep -n node` -g -- sleep 3
+    </code>
+    <br><code>sed -i -r \
+      -e "/( __libc_start| LazyCompile | v8::internal::| Builtin:| Stub:| LoadIC:|\[unknown\]| LoadPolymorphicIC:)/d" \
+      -e 's/ LazyCompile:[*~]?/ /' \
+      perfs.out</code>
+  </section>
+
+  <section class="main-section" id="Guides">
+    <header id="Guides">
+      Guides
+    </header>
+    <p>The Guides section has long-form, in-depth articles about Node.js technical features and capabilities.</p>
+    <p></p>
+  </section>
+
+  <section class="main-section" id="Dependencies">
+    <header id="Dependencies">
+      Dependencies
+    </header>
+    <p>Node.js depends on additional components beyond the Node.js code itself. These dependencies provide both native and JavaScript code and are built together with the code under the src and lib directories to create the Node.js binaries.</p>
+    <p></p>
+  </section>
+
+</main>
+
+</body>
+</html>

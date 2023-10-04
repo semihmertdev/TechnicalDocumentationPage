@@ -1,0 +1,85 @@
+/* Genel stil, her ekran boyutunda geçerli */
+body {
+  margin: 0;
+  padding: 0;
+  font-family: Arial, sans-serif;
+}
+
+#navbar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 50px;
+  width: 16%;
+  height: 100%;
+  background-color: white;
+  color: black;
+  display: flex;
+  flex-direction: column;
+  z-index: 1;
+  overflow: auto; /* Sadece yatayda kaydırma */
+  border-right: 3px solid gray;
+}
+
+#navbar a {
+  padding: 10px 30px;
+  text-decoration: none;
+  color: gray;
+  font-size: 16px;
+  border-top: 2px solid gray;
+}
+
+
+#node {
+  padding: 10px 30px;
+  font-size: 28px;
+  padding-top: 25px;
+  padding-bottom: 25px;
+}
+
+.main-section {
+  margin-left: 16%; /* Navbar genişliği kadar sola kaydır */
+  padding-top: 35px;
+  padding-left: 35px;
+}
+
+header {
+  font-size: 2em;
+}
+
+p {
+  font-size: 1em;
+  color: gray;
+}
+
+code {
+  background-color: gray;
+  color: white;
+}
+
+#About_documentation ul li{
+    color: gray;
+}
+
+/* Medya sorgusu ekleyerek responsive stil değişiklikleri yapın */
+@media screen and (max-width: 1360px) {
+  #navbar {
+    position: relative;
+    width: 100%;
+     /* Gerekirse dikeyde de kaydırma */
+    text-align: center;
+    height: auto; /* Yüksekliği otomatik ayarlanır */
+  }
+
+  .main-section {
+    margin-left: 0; /* Küçük ekranlarda sola kaydırmayı kaldırın */
+    padding-left: 10px; /* İçeriği sola kaydırın */
+  }
+  
+  #navbar a {
+    padding: 10px 30px; /* Bağlantıların padding'ini geri yükleyin */
+  }
+}
+
+
+
